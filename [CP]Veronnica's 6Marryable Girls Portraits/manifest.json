@@ -1,0 +1,11 @@
+{
+  "Name": "[CP]Veronnica's 6Marryable Girls Portraits",
+  "Author": "Veronnica",
+  "Version": "1.1.0",
+  "Description": "6Marryable girls portraits from Veronnica.",
+  "UniqueID": "Veronnica.6MarryableGirlsPortraits",
+  "UpdateKeys": ["Nexus: 16796"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

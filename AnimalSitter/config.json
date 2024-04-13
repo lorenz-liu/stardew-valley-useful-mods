@@ -1,0 +1,16 @@
+{
+  "KeyBind": "O",
+  "GrowUpEnabled": true,
+  "MaxHappinessEnabled": true,
+  "MaxFullnessEnabled": true,
+  "HarvestEnabled": true,
+  "PettingEnabled": true,
+  "MaxFriendshipEnabled": true,
+  "CostPerAction": 1,
+  "WhoChecks": "spouse",
+  "EnableMessages": true,
+  "TakeTrufflesFromPigs": true,
+  "BypassInventory": false,
+  "ChestCoords": "73, 14",
+  "ChestDefs": ""
+}
