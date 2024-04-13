@@ -17,6 +17,13 @@
   "DehydratorAutoInput": true,
   "SeedMakerAutoInput": true,
   "AnimalArtisanMachineAutoInput": true,
+  "OtherMachineAutoInput": true,
+  "OtherMachines": [
+    "Furnace",
+    "Heavy Furnace",
+    "Fish Smoker",
+    "Recycling Machine"
+  ],
   "SprinklerAutoInput": true,
   "AutoInputKeyAssist": "LeftShift"
 }
