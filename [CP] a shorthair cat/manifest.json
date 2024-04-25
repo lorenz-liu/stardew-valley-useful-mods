@@ -1,0 +1,11 @@
+{
+    "Name": "a shorthair cat",
+    "Author": "akazi",
+    "Version": "1.1.0",
+    "Description": "a shorthair cat.",
+    "UniqueID": "akazi.ashorthaircat",
+    "UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

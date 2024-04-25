@@ -1,0 +1,107 @@
+{
+   "Format": "2.0.0",
+      "ConfigSchema": {
+		 
+     "replaceWhichCat": {"AllowValues":"cat,cat1,cat2,cat3,cat4,cat5,False",
+     "Default": "cat"},
+		
+	 "catIcons": {"AllowValues": "replaceOrange,replaceGrey,replaceYellow,false","Default": "replaceOrange"},}
+,
+
+    "Changes": [
+        //replace catTheOrange
+      {
+		 "LogName": "cat",
+         "Action": "EditImage",
+         "Target": "Animals/cat",
+         "FromFile": "assets/shorthairsilver.png",
+         "When": {
+			 "replaceWhichCat":"cat" }
+       },
+	   
+        //replace catTheGrey
+	        {
+				"LogName": "cat1",
+         "Action": "EditImage",
+         "Target": "Animals/cat1",
+         "FromFile": "assets/shorthairsilver.png",
+		 "When": {
+			 "replaceWhichCat":"cat1" }
+      },
+	    //replace catTheYellow
+	        {
+				"LogName": "cat2",
+         "Action": "EditImage",
+         "Target": "Animals/cat2",
+         "FromFile": "assets/shorthairsilver.png",
+		 "When": {
+			 "replaceWhichCat":"cat2" }
+      },
+	  	  
+	    //replace catTheWhite
+	        {
+				"LogName": "cat3",
+         "Action": "EditImage",
+         "Target": "Animals/cat3",
+         "FromFile": "assets/shorthairsilver.png",
+		 "When": {
+			 "replaceWhichCat":"cat3" }
+      },
+
+	  	//replace catTheBlack
+	        {
+				"LogName": "cat4",
+         "Action": "EditImage",
+         "Target": "Animals/cat4",
+         "FromFile": "assets/shorthairsilver.png",
+		 "When": {
+			 "replaceWhichCat":"cat4" }
+      },
+
+	  
+	    //replace catTheIridium
+	        {
+				"LogName": "ca5",
+         "Action": "EditImage",
+         "Target": "Animals/cat5",
+         "FromFile": "assets/shorthairsilver.png",
+		 "When": {
+			"replaceWhichCat":"cat5" }
+      },
+
+	  	  
+	  
+	    //replace catTheOrange's icon
+	  			{
+         "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "FromFile": "assets/caticon.png",
+		 "ToArea": { "X": 160, "Y": 208, "Width": 16, "Height": 16},
+		 "When": {
+			 "catIcons": "replaceOrange", }
+		 
+      },
+	    //replace catTheGrey's icon
+	  
+	  	  			{
+         "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "FromFile": "assets/caticon.png",
+		 "ToArea": { "X": 176, "Y": 208, "Width": 16, "Height": 16},
+		 "When": {
+			 "catIcons": "replaceGrey",}
+	      },
+	  
+	    //replace catTheYellow's icon
+	  	  	  			{
+         "Action": "EditImage",
+         "Target": "LooseSprites/Cursors",
+         "FromFile": "assets/caticon.png",
+		 "ToArea": { "X": 192, "Y": 208, "Width": 16, "Height": 16},
+		  "When": {
+			 "catIcons": "replaceYellow",}
+			 
+      },
+	   
+	     ]
+}
