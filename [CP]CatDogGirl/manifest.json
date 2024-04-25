@@ -1,0 +1,11 @@
+{
+  "Name": "CatDogGirl",
+  "Author": "YukoValis",
+  "Version": "1.5.0",
+  "Description": "Replace cats and dogs with girls",
+  "UniqueID": "CatDogGirl",
+  "MinimumApiVersion": "2.5",
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

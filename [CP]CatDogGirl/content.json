@@ -1,0 +1,35 @@
+{
+	"Format": "1.9",
+	"Changes": [
+			{
+					"Action": "Load",
+					"Target": "Animals/cat.xnb",
+					"FromFile": "assets/cat.xnb",
+			},
+			{
+					"Action": "Load",
+					"Target": "Animals/cat1.xnb",
+					"FromFile": "assets/cat1.xnb",
+			},
+			{
+					"Action": "Load",
+					"Target": "Animals/cat2.xnb",
+					"FromFile": "assets/cat2.xnb",
+			},
+			{
+					"Action": "Load",
+					"Target": "Animals/dog.xnb",
+					"FromFile": "assets/dog.xnb",
+			},
+			{
+					"Action": "Load",
+					"Target": "Animals/dog1.xnb",
+					"FromFile": "assets/dog1.xnb",
+			},
+			{
+					"Action": "Load",
+					"Target": "Animals/dog2.xnb",
+					"FromFile": "assets/dog2.xnb",
+			},
+]
+}
