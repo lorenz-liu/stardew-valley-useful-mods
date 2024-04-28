@@ -1,0 +1,8 @@
+{
+    "Name": "Red pant",
+    "Description": "红色下装",
+    "HasFemaleVariant": true,
+    "Price": 1,
+    "Dyeable":false,
+    "DefaultColor": "255,255,255,0"
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Pink boots",
+  "Description": "粉色鞋子",
+  "Price": 1000,
+  "PurchasePrice": 1000,
+  "CanPurchase": true,
+  "PurchaseFrom": "Marlon",
+  "Defense": 3,
+  "Immunity": 7,
+}

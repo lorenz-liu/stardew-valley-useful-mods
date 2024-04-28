@@ -1,0 +1,13 @@
+﻿{
+  "Name": "[FS] GuoRen's Long sleeves and hair",
+  "Author": "GuoRen",
+  "Version": "1.0.0",
+  "Description": "GuoRen's Long sleeves and hair",
+  "UniqueID": "GuoRenLongsleevesandhair",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.1"
+  }
+}

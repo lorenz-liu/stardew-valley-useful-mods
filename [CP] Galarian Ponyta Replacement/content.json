@@ -1,0 +1,23 @@
+{
+  "Format": "1.3",
+  "Changes": [
+       // GalarianPonyta
+       {
+          "Action": "Load",
+          "Target": "Animals/Horse",
+          "FromFile": "assets/GalarianPonyta.png"
+       },
+
+     {
+          "Action": "Load",
+          "Target": "Characters/Farmer/farmer_base",
+          "FromFile": "assets/farmer_base.png"
+       },
+
+    {
+          "Action": "Load",
+          "Target": "Characters/Farmer/farmer_base",
+          "FromFile": "assets/farmer_girl_base.png"
+       },
+    ]
+}

@@ -1,0 +1,10 @@
+{
+   "Name": "[JA]GuoRen's cake clothes",
+   "Author": "GuoRen",
+   "Version": "1.0.1",
+   "Description": "GuoRen's cake clothes",
+   "UniqueID": "GuoRen.cakeclothes",
+   "ContentPackFor": {
+    	"UniqueID": "spacechase0.JsonAssets"
+    },
+}

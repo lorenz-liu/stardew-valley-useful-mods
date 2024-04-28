@@ -1,0 +1,79 @@
+{
+	"Name": "Dark green hat",
+	"FrontHat":
+	{
+		"DisableGrayscale": true,
+		"StartingPosition":
+		{
+			"X": 1,
+			"Y": 3
+		},
+		"HeadPosition":
+		{
+			"X": -1,
+			"Y": -3
+		},
+		"HatSize":
+		{
+			"Width": 18,
+			"Length": 14
+		},
+	},
+	"RightHat":
+	{
+		"DisableGrayscale": true,
+		"StartingPosition":
+		{
+			"X": 2,
+			"Y": 23
+		},
+		"HeadPosition":
+		{
+			"X": -2,
+			"Y": -3
+		},
+		"HatSize":
+		{
+			"Width": 15,
+			"Length": 17
+		},
+	},
+	"LeftHat":
+	{
+		"DisableGrayscale": true,
+		"StartingPosition":
+		{
+			"X": 3,
+			"Y": 43
+		},
+		"HeadPosition":
+		{
+			"X": -3,
+			"Y": -3
+		},
+		"HatSize":
+		{
+			"Width": 15,
+			"Length": 17
+		},
+	},
+	"BackHat":
+	{
+		"DisableGrayscale": true,
+		"StartingPosition":
+		{
+			"X": 1,
+			"Y": 63
+		},
+		"HeadPosition":
+		{
+			"X": -1,
+			"Y": -4
+		},
+		"HatSize":
+		{
+			"Width": 18,
+			"Length": 17
+		},
+	},
+}

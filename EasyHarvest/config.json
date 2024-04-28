@@ -1,0 +1,30 @@
+{
+  "HarvestRadius": 4,
+  "RegrowCropHarvest": true,
+  "SingleCropHarvest": true,
+  "FlowerHarvest": true,
+  "FruitTreeHarvest": true,
+  "ForageHarvest": true,
+  "BushHarvest": true,
+  "CollectableMachineHarvest": true,
+  "ProcessingMachineHarvest": true,
+  "DigUpArtifactSpot": true,
+  "WateringCrop": true,
+  "StirGarbageCan": true,
+  "KegAutoInput": true,
+  "PreservesJarAutoInput": true,
+  "CaskAutoInput": true,
+  "DehydratorAutoInput": true,
+  "SeedMakerAutoInput": true,
+  "AnimalArtisanMachineAutoInput": true,
+  "OtherMachineAutoInput": true,
+  "OtherMachines": [
+    "Furnace",
+    "Heavy Furnace",
+    "Fish Smoker",
+    "Recycling Machine"
+  ],
+  "AllMachineAutoInput": false,
+  "SprinklerAutoInput": true,
+  "AutoInputKeyAssist": "LeftShift"
+}

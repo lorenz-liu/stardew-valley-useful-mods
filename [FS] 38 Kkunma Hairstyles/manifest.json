@@ -1,0 +1,11 @@
+{
+  "Name": "Kkunma's 38 Hairstyles",
+  "Author": "halpyy",
+  "Version": "1.0.0",
+  "Description": "Fashion Pack for 38 Hairs.",
+  "UniqueID": "kkunma.request",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense"
+  }
+}

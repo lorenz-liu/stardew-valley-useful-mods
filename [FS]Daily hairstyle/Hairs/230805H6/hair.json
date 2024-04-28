@@ -1,0 +1,63 @@
+{
+  "Name": "230805H6",
+  "FrontHair": {
+    "DisableGrayscale": false,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "RightHair": {
+    "DisableGrayscale": false,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 2
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "LeftHair": {
+   "DisableGrayscale": false,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 2
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  },
+  "BackHair": {
+    "DisableGrayscale": false,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 96
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 32
+    }
+  }
+}

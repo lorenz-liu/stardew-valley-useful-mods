@@ -1,0 +1,11 @@
+{
+    "Name": "72 Hairstyles",
+    "Author": "Halpy",
+    "Version": "1.0.0",
+    "Description": "Kkunma's Final 72 Hairstyles",
+    "UniqueID": "halpy.kkunmahairstyles",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

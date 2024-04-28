@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Daily hairstyle·1",
+  "Author": "Kyuya",
+  "Version": "1.0.0",
+  "Description": "Eight daily hairstyles",
+  "UniqueID": "Kyuya.Dailyhairstyle1",
+  "UpdateKeys": ["Nexus:17702"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.3.0"
+  }
+}

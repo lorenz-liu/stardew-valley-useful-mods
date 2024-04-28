@@ -1,0 +1,64 @@
+{
+  "Name": "Miku hair",
+  "FrontHair": {
+	"DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X":3,
+      "Y": -3
+    },
+    "HairSize": {
+      "Width": 22,
+      "Length": 23
+    }
+  },
+  "RightHair": {
+	"DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 3,
+      "Y": -2
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 23
+    }
+  },
+  "LeftHair": {
+	"DisableGrayscale": true,
+    "Flipped": true,
+	"StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -3,
+      "Y": -2
+    },
+    "HairSize": {
+      "Width": 16,
+      "Length": 23
+    }
+  },
+  "BackHair": {
+	"DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 1,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": -4
+    },
+    "HairSize": {
+      "Width": 22,
+      "Length": 23
+    }
+  }
+}

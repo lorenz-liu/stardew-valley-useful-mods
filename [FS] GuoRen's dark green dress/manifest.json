@@ -1,0 +1,13 @@
+﻿{
+  "Name": "[FS]GuoRen's dark green dress",
+  "Author": "GuoRen",
+  "Version": "1.0.0",
+  "Description": "GuoRen's dark green dress",
+  "UniqueID": "GuoRendarkgreendress",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.1"
+  }
+}
