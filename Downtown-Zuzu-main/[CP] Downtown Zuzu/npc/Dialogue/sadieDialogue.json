@@ -1,54 +1,32 @@
-﻿{
-  //ASTERISK555 WIP 7
-  //INTRODUCTION//
-  "Introduction": "Hey there farmer, I'm Sadie.#$b#@, huh? Well, @, ready to go flying?$h#$b#Haha, just kidding around witcha.",
-
-  //INITIAL DIALOGUE (0 HEARTS)//
-  "Mon": "A golden scroll in another language, you say? I figure I could have a crack at it.",
-  "Tue": "I'm lucky that I get to travel as part of my job.#$b#Around here, you tend to need to jump through a lot of hoops if you want the chance to leave your little town.",
-  "Wed": "How goes it, @? Anything interesting happen today?$h",
-  "Thu": "Do anything fun today?$h",
-  "Fri": "I'm running a blog in my free time and I have a little online shop for when I find interesting things on my travels.$h",
-  "Sat": "Is that fresh fish I see in your bag?",
-  "Sun": "You know, I was actually from a small town, too.#$b#Everyone my age left. So I figured it was high time I find out what the fuss was all about.$h",
-
-
-  //2 HEART DIALOGUE//
-  "Mon2": "If I had the chance to go to space, I'd take it in a heartbeat! Wouldn't you?$h",
-  "Tue2": "The criminals around here are more of a joke than anything, but I keep up with my self-defense classes anyway. They're fun.#$b#They call themselves the Zuzu City Bruisers. A bunch of jokers, if you ask me.$h",
-  "Wed2": "You know, the problem with jobs is that everyone always wants you to keep doing the same thing all day, every day. Well, I refuse.$h",
-  "Thu2": "You're looking well.$h",
-  "Fri2": "What kind of places have you been to? We should trade stories sometime.$h",
-  "Sat2": "Have you ever seen a chicken drink a pint? Just another day at the pub back home.$h",
-  "Sun2": "See any monsters recently? It's so cool that you don't have to just run when you see one.#$b#I'd love to get a video sometime.$h",
-
-
-  //4 HEART DIALOGUE//
-  "Mon4": "I think it might be nice to go stay with my folks for a while. I think I'm due a holiday.",
-  "Tue4": "It's quite difficult to find good craftsmanship because everyone always wants things to be cheap.#$b#All the money going to Joja defunds small businesses.$s#$b#How do you manage?",
-  // "Wed4": "",
-  "Thu4": "What's your favourite place to be? I'm much happier in the city and travelling.$h#$b#There's just so much to learn.How can you do that if you stay in one place your whole life?$s",
-  "Fri4": "Your farm sounds really interesting. Would you want to be in one of my videos some time?$h",
-  // "Sat4": "",
-  "Sun4": "I don't know about you, but it's really weird the habits you can pick up from your job.",
-
-
-  //6 HEART DIALOGUE//
-  "Mon6": "Oooh, love the shirt. Looking lush.$h",
-  "Tue6": "Dig up any interesting artifacts recently? I've been really surprised with some of the stuff you've been able to find.$h#$b#Turns out you don't always have to travel to see something new.",
-  "Wed6": "How do you get on with the people in your life?#$b# I heard it's easier to not care what other people do when you realise they're not responsible for your happiness.#$b#I think it's different based on where you are-- like I don't give a rat's ass if someone is upset at work. I do a job. It's like a dance - there are a set number of things you have to do and that's it.$a#$b#But if you live with other people there's always a social responsibility for everyone.",
-  "Thu6": "You know Gwen? I worry for her sometimes.$s#$b#I'm not sure I'd be able to get her the kind of job she'd be comfortable in, though.$s",
-  "Fri6": "Back home could be a bit depressing sometimes. Everyone just did the same thing day after day.$s#$b#I think they were happy, but sometimes it felt like they just learned helplessness.$s",
-  "Sat6": "I do love a good fish dish.#$b#Tuna tacos are bangin’. Fish dishes have the best condiments, too.$h#$b#On airplanes, it's always potatoes... And they don't even cook 'em right!$a",
-  "Sun6": "I'm hoping to hop onto a different airline soon so I can shake up my destinations a bit.$h#$b#Most travel companies don't go to many different places, and each one has a different set of destinations..$s",
-
-
-  //8 HEART DIALOGUE//
-  "Mon8": "Hey there, good cooking, good looking, have anything for me today?$h",
-  "Tue8": "Sometimes in service jobs people don't get that it's a job.#$b#Well... I guess sometimes I'm nice out of habit because of my job, and because I always want to be positive on my blog and in my videos.$h",
-  // "Wed8": "",
-  // "Thu8": "",
-  // "Fri8": "",
-  "Sat8": "Hahaha, you should've been out last night! Cal was throwing shapes!$h"
-  // "Sun8": "",
+{
+    "Introduction": "嘿，农夫，我是萨迪。#$b#@，是吗？嗯，@，准备好飞了吗？$h#$b#哈哈，只是和你开玩笑。",
+    "Mon": "你说是另一种语言的金色卷轴？我觉得我可以试试。",
+    "Tue": "我很幸运，我的工作可以让我旅行。#$b#在这里，如果你想有机会离开你的小镇，你通常需要跨越很多障碍。",
+    "Wed": "你好，@？今天发生了什么有趣的事情吗？$h",
+    "Thu": "今天有做什么有趣的事吗？$h",
+    "Fri": "我在空闲时间经营着一个博客，我还有一个小的在线商店，当我在旅行中发现有趣的东西时就会用到。$h",
+    "Sat": "我看到你包里有新鲜的鱼吗？",
+    "Sun": "你知道吗，我其实也来自一个小镇。#$b#我这个年龄的人都离开了。所以我觉得是时候找出到底在搞什么了。$h",
+    "Mon2": "如果我有机会去太空，我会毫不犹豫地接受！你呢？$h",
+    "Tue2": "这附近的罪犯更像是一个笑话，但我还是坚持参加自卫课程。它们很有趣。#$b#他们称自己为祖祖城的打手队。如果你问我的话，他们就是一群小丑。$h",
+    "Wed2": "你知道，工作的问题在于每个人总是希望你每天都做同样的事情。嗯，我拒绝。$h",
+    "Thu2": "你看起来不错。$h",
+    "Fri2": "你去过什么地方？我们应该有时交换一下故事。$h",
+    "Sat2": "你见过鸡喝一品脱啤酒吗？这只是在家乡的酒吧里的另一天。$h",
+    "Sun2": "最近见到什么怪物了吗？你不必见到怪物就跑掉真是太酷了。#$b#我很想有时候能得到一个视频。$h",
+    "Mon4": "我觉得去我父母那里住一段时间可能会很好。我想我该度个假了。",
+    "Tue4": "要找到好的手艺很困难，因为每个人总是希望东西便宜。#$b#所有的钱都流向了Joja，削弱了小企业的经济基础。$s#$b#你是怎么管理的？",
+    "Thu4": "你最喜欢去哪里？我在城市和旅行中更快乐。$h#$b#这里有很多东西要学。如果你一辈子都待在一个地方，你怎么能做到呢？$s",
+    "Fri4": "你的农场听起来很有趣。你愿意有时出现在我的视频里吗？$h",
+    "Sun4": "我不知道你，但你可以从工作中养成的习惯真的很奇怪。",
+    "Mon6": "哦，爱这件衬衫。看起来漂亮。$h",
+    "Tue6": "最近挖出了什么有趣的文物吗？你能找到的东西让我感到非常惊讶。$h#$b#事实证明，你并不总是需要旅行才能看到新鲜事物。",
+    "Wed6": "你和生活中的人相处得如何？#$b#我听说当你意识到他们并不为你的幸福负责时，不去关心别人在做什么会更容易一些。#$b#我认为这取决于你所处的位置--就像我不在乎有人在工作中不高兴一样。我做我的工作。这就像跳舞--有一系列的事情你必须做，就这样。$a#$b#但如果你和其他人住在一起，每个人总有社会责任。",
+    "Thu6": "你认识格温吗？有时我为她担心。$s#$b#不过我不确定我能给她找到她会感到舒适的工作。$s",
+    "Fri6": "回家有时会有点沮丧。每个人都是日复一日地做着同样的事情。$s#$b#我觉得他们是快乐的，但有时感觉他们只是学会了无助。$s",
+    "Sat6": "我确实喜欢一道好的鱼菜。#$b#金枪鱼玉米饼真是太棒了。鱼菜也有最好的配料。$h#$b#在飞机上，总是吃土豆...而且他们甚至都不会煮好它们！$a",
+    "Sun6": "我希望很快能换乘其他航空公司，这样我就可以稍微改变一下我的目的地。$h#$b#大多数旅行公司不去很多不同的地方，而且每个地方都有不同的目的地。$s",
+    "Mon8": "嘿，厨艺精湛，相貌出众，今天有什么给我吗？$h",
+    "Tue8": "有时候在服务行业，人们并不明白这是一份工作。#$b#嗯...我想有时候我是出于习惯的友善，因为我的工作，还因为我总是希望在我的博客和视频中保持积极的态度。$h",
+    "Sat8": "哈哈哈，你昨晚应该出去的！卡尔在疯狂跳舞！$h"
 }

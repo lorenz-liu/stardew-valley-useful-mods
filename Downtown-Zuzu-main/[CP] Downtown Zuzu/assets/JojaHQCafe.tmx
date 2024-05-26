@@ -834,12 +834,12 @@
   </object>
   <object id="48" name="TileData" x="240" y="64" width="16" height="16">
    <properties>
-    <property name="Action" value="Dialogue This cola machine is out of order."/>
+    <property name="Action" value="Dialogue 这台可乐机坏了。"/>
    </properties>
   </object>
   <object id="49" name="TileData" x="256" y="64" width="16" height="16">
    <properties>
-    <property name="Action" value="Dialogue This cola machine is out of order."/>
+    <property name="Action" value="Dialogue 这台可乐机坏了。"/>
    </properties>
   </object>
   <object id="50" name="TileData" x="336" y="224" width="16" height="16">

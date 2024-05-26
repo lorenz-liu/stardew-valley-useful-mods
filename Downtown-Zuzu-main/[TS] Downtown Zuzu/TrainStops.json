@@ -3,7 +3,8 @@
 		{
 			"TargetMapName": "Custom_DTZ_TrainStation",
 			"LocalizedDisplayName": {
-				"en": "Zuzu Forest"
+				"en": "Zuzu Forest",
+				"zh": "祖祖森林",
 			},
 			"TargetX": 7,
 			"TargetY": 5,
