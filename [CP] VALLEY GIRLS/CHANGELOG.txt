@@ -1,0 +1,23 @@
+CHANGELOG 3.5.0
+
+NEW SEX SCHEDULES
+- Penny + Sam: Summer Thursday 6:30pm, Trailer
+- Maru + Harvey: Summer Tuesday 3:00pm, Hospital
+- Emily + Shane: Spring Saturday 7:00pm, Saloon
+- Robin + Demetrius: Saturdays 8:30pm, Their Bedroom
+- Jodi + Kent: Thursday (Year2+)(NOT Spring) 7:30pm, Their Bedroom
+- Robin + Leah: Fall Wednesday 7:40pm, Saloon Female Bathroom
+
+- Major edits to sex schedule scenes. They will now play 3 animations per session.
+- Added more Portrait Animations
+- Edited the Bathroom map layouts
+- Bathroom Doors are now Clickable to enter (No longer instant warp tiles)
+- Major improvements to Animated Sprites
+- Dialogue Tweaks
+
+- Fixed Maru and Leah schedule bug
+- Fixed issue with girls getting angry at more than 10 hearts.
+
+
+NOTE:
+Cutscenes were planned for this update. But there is a bug with content patcher which is impacting them. So they have been removed from this update until it is fixed.

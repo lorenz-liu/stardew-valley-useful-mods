@@ -1,0 +1,17 @@
+{
+  "Name": "Valley Girls",
+  "Author": "Trashracc1124",
+  "Version": "3.5.0",
+  "Description": "Adds adult content for female NPC's",
+  "UniqueID": "Trashracc.VG",
+  "UpdateKeys": [ "Nexus:10532" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": false
+    },
+  ]
+}
