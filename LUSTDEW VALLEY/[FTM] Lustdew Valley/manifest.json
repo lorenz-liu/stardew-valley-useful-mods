@@ -1,0 +1,12 @@
+{
+  "Name": "FTM Lustdew Valley",
+  "Author": "Trashracc1124",
+  "Version": "1.0.0",
+  "Description": "Adds Lustful content",
+  "UniqueID": "Trashracc.LustdewFTM",
+  "UpdateKeys": [ "Nexus:" ],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.10.1"
+  }
+}

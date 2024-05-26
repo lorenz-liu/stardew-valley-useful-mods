@@ -1,0 +1,11 @@
+{
+  "Changes": [
+    { //SAUNA ENTER
+      "Action": "EditData",
+      "Target": "data/events/Custom_RaccoonRoom",
+      "Entries": {
+        "10532": "Hospital_Ambient/-1000 -1000/farmer 5 5 0/skippable/viewport 4 6 true/warp farmer 4 10/playSound doorClose/pause 1000/emote farmer 16/pause 1000/message \"Oh? A visitor?\"/pause 1000/message \"Excuse me for my unusual appearance... Not many people are use to seeing masculine raccoons like myself.\"/message \"The valley is full of suprises, isn't it?\"/pause 1000/move farmer 0 -2 0/emote farmer 8/message \"The name is 'Big Racc' by the way.\"/pause 600/message \"I come from a mystical place hidden deep within the secret woods. But I enjoy coming here to relax...\"/message \"...and to have a little fun as well, if you know what I mean?\"/pause 1000/message \"You see, I've encountered many interesting things in this sauna.\"/message \"The girls in this town often visit the showers and pleasure themselves with large, purple toys.\"/message \"Its exciting to see how deep they can go.\"/message \"Sometimes I wish I could join them, but I am afraid I'll scare them away...\"/pause 1000/message \"There is only one girl who has found me so far...\"/message \"She will often visit when she is bored, and she will let me pleasure her in many fun ways.\"/pause 1000/message \"But lately its been quiet here. Nobody else ever visits the sauna. Especially after the bathhouse opened...\"/message \"Perhaps if I could convince more girls to visit the sauna, I could pleasure more of them?\"/pause 1000/message \"I've been waiting for somebody like you... Someone who is sneaky...\"/message \"Maybe you can help me out with a favour? And if you succeed I will reward you. How does that sound?\"/pause 1000/emote farmer 32/message \"Great! All you need to do is sneak into the girls rooms and bring me their toys.\"/message \"I would do it myself but I am way too bulky...\"/pause 600/message \"I suggest searching around their beds since thats where they usually hide them.\"/message \"or even search the bathroom lockers, I've seen some there too!\"/pause 600/message \"I am counting on you my friend!\"/pause 500/emote farmer 20/pause 1000/globalFade/viewport -1000 -100/end"
+      }
+    }
+  ]
+}

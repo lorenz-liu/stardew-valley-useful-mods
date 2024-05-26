@@ -1,0 +1,783 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Uncencored Raccoon": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "makes the raccoon go nakey mode."
+    }
+  },
+  "Changes": [
+    { //Meep Scenes
+      "LogName": "Meep Include",
+      "Action": "Include",
+      "FromFile": "assets/Jsons/Meep.json"
+    },
+    { //Events
+      "LogName": "Events Include",
+      "Action": "Include",
+      "FromFile": "assets/Jsons/Events.json"
+    },
+    //Loading empty jsons for custom events at custom locations
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_RaccoonRoom",
+      "FromFile": "Data/events/{{TargetWithoutPath}}.json"
+    },
+    { //ANIMATIONS
+      "Action": "Load",
+      "Target": "Trashracc.Lustdew/A1, Trashracc.Lustdew/A2_F, Trashracc.Lustdew/A2_M, Trashracc.Lustdew/A3_F, Trashracc.Lustdew/A3_M, Trashracc.Lustdew/A4_F, Trashracc.Lustdew/A5_F",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png"
+    },
+    { //LOAD ASSETS
+      "Action": "Load",
+      "Target": "Trashracc.Lustdew/objects, Trashracc.Lustdew/furniture, Trashracc.Lustdew/RaccoonBundle, Trashracc.Lustdew/RaccoonShop, Trashracc.Lustdew/hats, Trashracc.Lustdew/pants, Trashracc.Lustdew/shirts",
+      "FromFile": "assets/LooseSprites/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Custom_ExtraVG",
+      "FromFile": "assets/LooseSprites/{{TargetWithoutPath}}.png"
+    },
+    { //UNCENCORED RACCOON
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonRoom",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 0, "Y": 4, "Width": 3, "Height": 1},
+      "ToArea": {"X": 3, "Y": 4, "Width": 3, "Height": 1},
+      "When": {
+        "Uncencored Raccoon": "true"
+      }
+    },
+    { 
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 0, "Y": 5, "Width": 3, "Height": 1},
+      "ToArea": {"X": 17, "Y": 11, "Width": 3, "Height": 1},
+      "When": {
+        "Uncencored Raccoon": "true"
+      }
+    },
+    { //Random Club NPC 1
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 0, "Y": 0, "Width": 2, "Height": 2},
+      "ToArea": {"X": 24, "Y": 12, "Width": 2, "Height": 2},
+      "When": {
+        "DayOfWeek": "Tuesday, Thursday, Friday, Sunday"
+      }
+    },
+    { //Random Club NPC 2
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 2, "Y": 0, "Width": 2, "Height": 2},
+      "ToArea": {"X": 8, "Y": 13, "Width": 2, "Height": 2},
+      "When": {
+        "DayOfWeek": "Monday, Wednesday, Friday, Sunday"
+      }
+    },
+    { //Random Club NPC 3
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 0, "Y": 2, "Width": 2, "Height": 2},
+      "ToArea": {"X": 10, "Y": 20, "Width": 2, "Height": 2},
+      "When": {
+        "DayOfWeek": "Tuesday, Wednesday, Friday, Saturday"
+      }
+    },
+    { //Random Club NPC 4
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 2, "Y": 2, "Width": 1, "Height": 2},
+      "ToArea": {"X": 1, "Y": 23, "Width": 1, "Height": 2},
+      "When": {
+        "DayOfWeek": "Monday, Thursday, Friday, Saturday"
+      }
+    }, 
+    { //Random Club NPC 5
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "FromFile": "assets/Maps/Custom_LustdewTiles.tbin",
+      "Update": "OnLocationChange",
+      "FromArea": {"X": 3, "Y": 2, "Width": 1, "Height": 2},
+      "ToArea": {"X": 30, "Y": 15, "Width": 1, "Height": 2},
+      "When": {
+        "DayOfWeek": "Monday, Wednesday, Friday, Sunday"
+      }
+    },
+    { //Bundles
+      "LogName": "Raccoon Bundle",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "Trashracc.Lustdew.Bundle": {
+          "Location": "Custom_RaccoonRoom",
+          "BundleName": "{{i18n: RaccoonBundle}}",
+          "BundleIconAsset": "Trashracc.Lustdew/RaccoonBundle",
+          "ShopPosition": "4, 6",
+          "ShopType": "CCBundle",
+          "DrawQuestionMark": false,
+          "ShopEvent": "tribal/-1000 -1000/farmer 4 8 0/skippable/viewport 4 6 true/message \"Look at all these toys!\"/ub_applyPatch/pause 1200/message \"This should be enough to attract the girls here... I hope...\"/pause 600/message \"You are quite the sneaky raccoon yourself. Your skills have impressed me!\"/pause 600/message \"Now for that reward I mentioned earlier...\"/pause 1000/message \"I have revealed a secret door inside the dark tunnel.\"/message \"It leads to a place full of endless pleasure.\"/pause 300/emote farmer 16/pause 600/message \"Thank you for all your help my friend.\"/message \"I hope you find this place as rewarding as I do.\"/emote farmer 32/pause 800/globalFade/viewport -1000 -100/playSound Cowboy_Secret/message \"You have unlocked the secret club!\"/end",
+          "Price": {
+            "{{ModId}}_AbigailsBBC": 1,
+            "{{ModId}}_EmilysCrystal": 1,
+            "{{ModId}}_HaleysButtplug": 1,
+            "{{ModId}}_LeahsBeads": 1,
+            "{{ModId}}_MarusVibrator": 1,
+            "{{ModId}}_PennysDildo": 1
+          },
+          "BundleReward": {
+            "{{ModId}}_RaccoonCoinz": 3
+          },
+          "EditMap": "Maps/Tunnel_Door",
+          "EditMapLocation": "Tunnel",
+          "EditMapPosition": "29, 1",
+          "EditMapMode": "Replace"
+        }
+      }
+    },
+    { //Custom Message
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "Custom_RaccoonRoom.1": "{{i18n:Custom_RaccoonRoom.1}}",
+        "Custom_RaccoonRoom.2": "{{i18n:Custom_RaccoonRoom.2}}",
+        "Custom_RaccoonClub.1": "{{i18n:Custom_RaccoonClub.1}}",
+        "Custom_RaccoonClub.2": "{{i18n:Custom_RaccoonClub.2}}",
+        "Custom_RaccoonClub.3": "{{i18n:Custom_RaccoonClub.3}}",
+        "Custom_RaccoonClub.4": "{{i18n:Custom_RaccoonClub.4}}",
+        "Custom_RaccoonClub.5": "{{i18n:Custom_RaccoonClub.5}}",
+        "Custom_RaccoonClub.6": "{{i18n:Custom_RaccoonClub.6}}",
+        "Custom_RaccoonClub.7": "{{i18n:Custom_RaccoonClub.7}}",
+        "Custom_RaccoonClub.8": "{{i18n:Custom_RaccoonClub.8}}",
+        "Custom_RaccoonClub.9": "{{i18n:Custom_RaccoonClub.9}}"
+      }
+    },
+    { //Custom Garbage
+      "Action": "EditData",
+      "Target": "Data/GarbageCans",
+      "TargetField": [ "GarbageCans" ],
+      "entries": {
+        "{{ModId}}_LustGarbage1": {
+          "Items": [
+            {
+              "ID": "{{ModId}}_UsedCondom",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedCondom"
+            },
+            {
+              "ID": "{{ModId}}_UsedTissue",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedTissue"
+            },
+            {
+              "ID": "{{ModId}}_RaccoonCoinz",
+              "Condition": "RANDOM 0.30",
+              "ItemId": "(O){{ModId}}_RaccoonCoinz"
+            }
+          ]
+        },
+        "{{ModId}}_LustGarbage2": {
+          "Items": [
+            {
+              "ID": "{{ModId}}_UsedCondom",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedCondom"
+            },
+            {
+              "ID": "{{ModId}}_UsedTissue",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedTissue"
+            },
+            {
+              "ID": "{{ModId}}_RaccoonCoinz",
+              "Condition": "RANDOM 0.30",
+              "ItemId": "(O){{ModId}}_RaccoonCoinz"
+            }
+          ]
+        },
+        "{{ModId}}_LustGarbage3": {
+          "Items": [
+            {
+              "ID": "{{ModId}}_UsedCondom",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedCondom"
+            },
+            {
+              "ID": "{{ModId}}_UsedTissue",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedTissue"
+            },
+            {
+              "ID": "{{ModId}}_RaccoonCoinz",
+              "Condition": "RANDOM 0.30",
+              "ItemId": "(O){{ModId}}_RaccoonCoinz"
+            }
+          ]
+        },
+        "{{ModId}}_LustGarbage4": {
+          "Items": [
+            {
+              "ID": "{{ModId}}_UsedCondom",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedCondom"
+            },
+            {
+              "ID": "{{ModId}}_UsedTissue",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedTissue"
+            },
+            {
+              "ID": "{{ModId}}_RaccoonCoinz",
+              "Condition": "RANDOM 0.30",
+              "ItemId": "(O){{ModId}}_RaccoonCoinz"
+            }
+          ]
+        },
+        "{{ModId}}_LustGarbage5": {
+          "Items": [
+            {
+              "ID": "{{ModId}}_UsedCondom",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedCondom"
+            },
+            {
+              "ID": "{{ModId}}_UsedTissue",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedTissue"
+            },
+            {
+              "ID": "{{ModId}}_RaccoonCoinz",
+              "Condition": "RANDOM 0.30",
+              "ItemId": "(O){{ModId}}_RaccoonCoinz"
+            }
+          ]
+        },
+        "{{ModId}}_LustGarbage6": {
+          "Items": [
+            {
+              "ID": "{{ModId}}_UsedCondom",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedCondom"
+            },
+            {
+              "ID": "{{ModId}}_UsedTissue",
+              "Condition": "RANDOM 0.50",
+              "ItemId": "(O){{ModId}}_UsedTissue"
+            },
+            {
+              "ID": "{{ModId}}_RaccoonCoinz",
+              "Condition": "RANDOM 0.30",
+              "ItemId": "(O){{ModId}}_RaccoonCoinz"
+            }
+          ]
+        }
+      }
+    },
+    { //LOCATIONS
+      "Action": "Load",
+      "Target": "Maps/Tunnel_Door, Maps/Custom_RaccoonRoom, Maps/Custom_RaccoonClub, Maps/Custom_ClubBed, Maps/Custom_ClubToilet",
+      "FromFile": "assets/Maps/{{TargetWithoutPath}}.tbin"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Custom_RaccoonRoom": {
+          "CreateOnLoad": { "MapPath": "Maps/Custom_RaccoonRoom" }
+        },
+        "Custom_RaccoonClub": {
+          "CreateOnLoad": { "MapPath": "Maps/Custom_RaccoonClub" }
+        },
+        "Custom_ClubBed": {
+          "CreateOnLoad": { "MapPath": "Maps/Custom_ClubBed" }
+        },
+        "Custom_ClubToilet": {
+          "CreateOnLoad": { "MapPath": "Maps/Custom_ClubToilet" }
+        }
+      }
+    },
+     /*=======================================================================================================================
+    CONTENT PATCHER ANIMATIONS
+    =======================================================================================================================*/
+    {//Animation 1
+      "LogName": "Animation1",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A1",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    {//Animation 2 Female
+      "LogName": "Animation2F",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A2_F",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    {//Animation 2 Male
+      "LogName": "Animation2M",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A2_M",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    {//Animation 3 Female
+      "LogName": "Animation3F",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A3_F",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    {//Animation 3 Male
+      "LogName": "Animation3M",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A3_M",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    {//Animation 4 Female
+      "LogName": "Animation4F",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A4_F",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    {//Animation 5 Female
+      "LogName": "Animation5F",
+      "Action": "EditImage",
+      "Target": "Trashracc.Lustdew/A5_F",
+      "FromFile": "assets/Animations/{{TargetWithoutPath}}.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "ToArea": {"X": 0, "Y": 0, "Width": 128, "Height": 288},
+      "AnimationFrameTime": 7,
+      "AnimationFrameCount": 5
+    },
+    /*=======================================================================================================================
+    CUSTOM OBJECTS
+    =======================================================================================================================*/
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AbigailsBBC": {
+          "Name": "{{ModId}}_AbigailsBBC",
+          "Displayname": "Abigails BBC",
+          "Description": "A very large, black dildo.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 0,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_EmilysCrystal": {
+          "Name": "{{ModId}}_EmilysCrystal",
+          "Displayname": "Emilys Crystal",
+          "Description": "An emerald shaped like a dildo.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 1,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_HaleysButtplug": {
+          "Name": "{{ModId}}_HaleysButtplug",
+          "Displayname": "Haleys Butt Plug",
+          "Description": "A pink and glittery butt plug.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 2,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_LeahsBeads": {
+          "Name": "{{ModId}}_LeahsBeads",
+          "Displayname": "Leahs Beads",
+          "Description": "Anal Beads crafted from ruby.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 3,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_MarusVibrator": {
+          "Name": "{{ModId}}_MarusVibrator",
+          "Displayname": "Marus Vibrator",
+          "Description": "A high-tech vibrator with flashy buttons.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 4,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_PennysDildo": {
+          "Name": "{{ModId}}_PennysDildo",
+          "Displayname": "Pennys Dildo",
+          "Description": "A plain and simple dildo.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 5,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_Condom": {
+          "Name": "{{ModId}}_Condom",
+          "Displayname": "Condom",
+          "Description": "Hold this when entering a Lustdew room to initiate sex.",
+          "Type": "Basic",
+          "Category": -24,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 6,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_UsedCondom": {
+          "Name": "{{ModId}}_UsedCondom",
+          "Displayname": "Used Condom",
+          "Description": "It's sticky and full of cum.",
+          "Type": "Litter",
+          "Category": -20,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 9
+        },
+        "{{ModId}}_UsedTissue": {
+          "Name": "{{ModId}}_UsedTissue",
+          "Displayname": "Used Tissue",
+          "Description": "A dried up cum tissue.",
+          "Type": "Litter",
+          "Category": -20,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 8
+        },
+        "{{ModId}}_RaccoonCoinz": {
+          "Name": "{{ModId}}_RaccoonCoinz",
+          "Displayname": "Raccoon Coinz",
+          "Description": "A special token that can be used at the toy dispenser.",
+          "Type": "Basic",
+          "Category": -29,
+          "Price": 500,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 10,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_HolyBible": {
+          "Name": "{{ModId}}_HolyBible",
+          "Displayname": "The Holy Bible of Yoba",
+          "Description": "It does nothing...",
+          "Type": "Basic",
+          "Category": -29,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 11,
+          "ContextTags": [ "not_giftable" ]
+        },
+        "{{ModId}}_LewdFabric": {
+          "Name": "{{ModId}}_LewdFabric",
+          "Displayname": "Lewd Fabric",
+          "Description": "A bolt of cloth that smells like sex.",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 200,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 13
+        },
+        "{{ModId}}_JarOfCum": {
+          "Name": "{{ModId}}_JarOfCum",
+          "Displayname": "Jar of Cum",
+          "Description": "It's not mayonaise. But it can be if you want?",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 200,
+          "Texture": "{{ModId}}/objects",
+          "SpriteIndex": 14,
+          "Edibility": 20,
+          "IsDrink": true
+        }
+      }
+    },
+    { //CUSTOM FURNITURE
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "{{ModId}}_Tentacle": "{{ModId}}_Tentacle/Chair/1 2/1 1/1/2000/2/The Tentacle/0/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_Stallion": "{{ModId}}_Stallion/Chair/1 2/1 1/1/2000/2/The Stallion/1/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_Doberman": "{{ModId}}_Doberman/Chair/1 2/1 1/1/2000/2/The Doberman/2/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_Archer": "{{ModId}}_Archer/Chair/1 2/1 1/1/2000/2/The Archer/3/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_BadDragon": "{{ModId}}_BadDragon/Chair/1 1/1 1/1/2000/2/The Bad Dragon/4/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_Werecroc": "{{ModId}}_Werecroc/Chair/1 1/1 1/1/2000/2/The Werecroc/5/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_NightDrake": "{{ModId}}_NightDrake/Chair/1 1/1 1/1/2000/2/The Night Drake/6/{{ModId}}\\furniture/true/collection_bdtoys",
+        "{{ModId}}_EarthDragon": "{{ModId}}_EarthDragon/Chair/1 1/1 1/1/2000/2/The Earth Dragon/7/{{ModId}}\\furniture/true/collection_bdtoys"
+          }
+    },
+    { //CUSTOM HATS
+      "Action": "EditData",
+      "Target": "Data/hats",
+      "Entries": {
+        "{{ModId}}_RaccoonEars": "{{ModId}}_RaccoonEars/So soft!/true/true/false/Raccoon Ears/0/{{ModId}}\\hats",
+        "{{ModId}}_DragonHorns": "{{ModId}}_DragonHorns/A horny hat, for a horny person./true/true/false/Dragon Horn's/1/{{ModId}}\\hats"
+          }
+    },
+    { //CUSTOM PANTS
+      "Action": "EditData",
+      "Target": "Data/pants",
+      "Entries": {
+        "{{ModId}}_Strapon": {
+          "Name": "{{ModId}}_Strapon",
+          "DisplayName": "Strapon",
+          "Description": "A wearable Penis.",
+          "Texture": "{{ModId}}/pants",
+          "SpriteIndex": "0",
+          "CanBeDyed": "true"
+        }
+      }
+    },
+    { //CUSTOM SHIRTS
+      "Action": "EditData",
+      "Target": "Data/shirts",
+      "Entries": {
+        "{{ModId}}_Bra": {
+          "Name": "{{ModId}}_Bra",
+          "DisplayName": "Tight Bra",
+          "Description": "It barely covers anything.",
+          "Texture": "{{ModId}}/shirts",
+          "SpriteIndex": "0",
+          "HasSleeves": "false",
+          "CanBeDyed": "true"
+        }
+      }
+    },
+    { //MACHINE EDITS
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}_UsedTissue": {
+          "Id": "{{ModId}}_UsedTissue",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModId}}_UsedTissue",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "CustomData": null,
+              "Id": "(O){{ModId}}_LewdFabric",
+              "ItemId": "(O){{ModId}}_LewdFabric",
+              "ObjectInternalName": "Lewd Fabric",
+              "ObjectDisplayName": "Lewd Fabric"
+            }
+          ],
+          "MinutesUntilReady": 60
+        },
+        "{{ModId}}_UsedCondom": {
+          "Id": "{{ModId}}_UsedCondom",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "{{ModId}}_UsedCondom",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "CustomData": null,
+              "Id": "(O){{ModId}}_JarOfCum",
+              "ItemId": "(O){{ModId}}_JarOfCum",
+              "ObjectInternalName": "Jar of Cum",
+              "ObjectDisplayName": "Jar of Cum"
+            }
+          ],
+          "MinutesUntilReady": 60
+        }
+      }
+    },
+    {//SHOPS
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "Trashracc.Lustdew_RaccoonShop": {
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Portrait": "{{InternalAssetKey: assets/LooseSprites/RaccoonShop.png}}",
+              "Dialogues": [
+                {
+                  "Id": "Trashracc.Lustdew_Default",
+                  "Dialogue": "{{i18n:ShopsDialogue.RaccoonShop}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_Strapon",
+              "ItemId": "(P){{ModId}}_Strapon",
+              "Price": 500
+            },
+            {
+              "Id": "{{ModId}}_RaccoonEars",
+              "ItemId": "(H){{ModId}}_RaccoonEars",
+              "TradeItemId": "{{ModId}}_LewdFabric",
+              "TradeItemAmount": "3"
+            },
+            {
+              "Id": "{{ModId}}_DragonHorns",
+              "ItemId": "(H){{ModId}}_DragonHorns",
+              "TradeItemId": "{{ModId}}_LewdFabric",
+              "TradeItemAmount": "3"
+            },
+            {
+              "Id": "{{ModId}}_Bra",
+              "ItemId": "(S){{ModId}}_Bra",
+              "TradeItemId": "{{ModId}}_LewdFabric",
+              "TradeItemAmount": "3"
+            },
+            {
+              "Id": "{{ModId}}_HolyBible",
+              "ItemId": "(O){{ModId}}_HolyBible",
+              "Price": 100
+            }
+          ]
+        },
+        "Trashracc.Lustdew_ToyDispenser": {
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Dialogues": [
+                {
+                  "Dialogue": ""
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_AbigailsBBC",
+              "ItemId": "(O){{ModId}}_AbigailsBBC",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_EmilysCrystal",
+              "ItemId": "(O){{ModId}}_EmilysCrystal",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_HaleysButtplug",
+              "ItemId": "(O){{ModId}}_HaleysButtplug",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_LeahsBeads",
+              "ItemId": "(O){{ModId}}_LeahsBeads",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_MarusVibrator",
+              "ItemId": "(O){{ModId}}_MarusVibrator",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_PennysDildo",
+              "ItemId": "(O){{ModId}}_PennysDildo",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_Tentacle",
+              "ItemId": "(F){{ModId}}_Tentacle",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_Stallion",
+              "ItemId": "(F){{ModId}}_Stallion",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_Doberman",
+              "ItemId": "(F){{ModId}}_Doberman",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_Archer",
+              "ItemId": "(F){{ModId}}_Archer",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_BadDragon",
+              "ItemId": "(F){{ModId}}_BadDragon",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_Werecroc",
+              "ItemId": "(F){{ModId}}_Werecroc",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_NightDrake",
+              "ItemId": "(F){{ModId}}_NightDrake",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            },
+            {
+              "Id": "{{ModId}}_EarthDragon",
+              "ItemId": "(F){{ModId}}_EarthDragon",
+              "TradeItemId": "{{ModId}}_RaccoonCoinz",
+              "TradeItemAmount": "1"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

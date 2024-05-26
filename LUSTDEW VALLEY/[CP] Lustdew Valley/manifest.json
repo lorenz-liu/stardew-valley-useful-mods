@@ -1,0 +1,24 @@
+{
+  "Name": "Lustdew Valley",
+  "Author": "Trashracc1124",
+  "Version": "1.0.0",
+  "Description": "Adds Lustful content",
+  "UniqueID": "Trashracc.Lustdew",
+  "UpdateKeys": [ "Nexus:23623" ],
+
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "DH.MEEP": "2.0.0",
+  "DH.MEEP.CloseupInteractions": "",
+  "Dependencies": [
+    {
+      "UniqueID": "Trashracc.VG",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "misscoriel.eventrepeater",
+      "IsRequired": false
+   }
+  ]
+}

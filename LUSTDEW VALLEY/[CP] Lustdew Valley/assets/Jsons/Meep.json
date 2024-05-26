@@ -1,0 +1,452 @@
+{
+  "Changes": [
+    /*=======================================================================================================================
+    CLOSE UP INTERACTIONS & CLICKABLE COORDINATES
+    =======================================================================================================================*/
+    //ANIMATION COLLECTION 1
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A1 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A1 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A1 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A1 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A1 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A1 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    { //HasRandomClubNPC
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A1 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A1 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A1 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Tuesday, Thursday, Saturday"
+      }
+    },
+    { //HasRandomClubNPC
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A1 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A1 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A1 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Tuesday, Thursday, Saturday"
+      }
+    },
+    //ANIMATION COLLECTION 2 (FEMALE)
+    { //HasRandomClubNPC
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Monday, Wednesday, Saturday"
+      }
+    },
+    { //HasRandomClubNPC
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Monday, Wednesday, Saturday"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    //ANIMATION COLLECTION 2 (MALE)
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_M 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_M 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_M 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_M 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_M 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_M 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    { //HasRandomClubNPC
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_M 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_M 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_M 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Monday, Thursday, Sunday"
+      }
+    },
+    { //HasRandomClubNPC
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A2_M 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A2_M 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A2_M 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Monday, Thursday, Sunday"
+      }
+    },
+    //ANIMATION COLLECTION 3 (FEMALE)
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A3_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A3_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A3_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A3_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A3_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A3_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    //ANIMATION COLLECTION 3 (MALE)
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A3_M 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A3_M 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A3_M 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A3_M 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A3_M 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A3_M 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    //ANIMATION COLLECTION 4
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A4_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A4_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A4_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A4_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A4_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A4_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    //ANIMATION COLLECTION 5
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A5_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A5_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A5_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_RaccoonClub",
+      "Update": "OnTimeChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteractionReel",
+            "MEEP_CloseupInteraction_Image_1": "Trashracc.Lustdew/A5_F 0 0 128 96",
+            "MEEP_CloseupInteraction_Image_2": "Trashracc.Lustdew/A5_F 0 96 128 96",
+            "MEEP_CloseupInteraction_Image_3": "Trashracc.Lustdew/A5_F 0 192 128 96",
+            "MEEP_CloseupInteraction_Sound": "slimeHit"
+          }
+        }
+      ]
+    }
+  ]
+}
