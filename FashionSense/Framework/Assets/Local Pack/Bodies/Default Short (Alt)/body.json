@@ -1,6 +1,6 @@
 {
   // See the wiki for all body properties: https://github.com/Floogen/FashionSense/wiki/Body-Model-Properties
-  "Name": "Default (Tall)",
+  "Name": "Default (Short) - Alt",
   "Format": "6.3.0",
   "FrontBody": {
     "SkinTone": {
@@ -37,24 +37,13 @@
       "X": 0,
       "Y": 0
     },
-    "Portrait": {
-      "SourceRectangle": {
-        "X": 0,
-        "Y": 0,
-        "Width": 16,
-        "Height": 15
-      },
-      "Offset": {
-        "X": 0,
-        "Y": 4
-      }
-    },
-
     "EyeBackgroundPosition": 40,
-    "EyePosition": 40,
+    "EyePosition": 44,
+    "AccessoryOffset": 4,
     "LegOffset": 0,
-    "HeadOffset": -4,
+    "HeadOffset": 0,
     "ArmsOffset": 0,
+    "BodyOffset": 4,
     "BodySize": {
       "Width": 16,
       "Length": 32
@@ -1358,10 +1347,12 @@
       "Y": 0
     },
     "EyeBackgroundPosition": 40,
-    "EyePosition": 36,
+    "EyePosition": 40,
+    "AccessoryOffset": 4,
     "LegOffset": 0,
-    "HeadOffset": -4,
+    "HeadOffset": 0,
     "ArmsOffset": 0,
+    "BodyOffset": 4,
     "BodySize": {
       "Width": 16,
       "Length": 32
@@ -2666,10 +2657,12 @@
       "Y": 0
     },
     "EyeBackgroundPosition": 40,
-    "EyePosition": 36,
+    "EyePosition": 40,
+    "AccessoryOffset": 4,
     "LegOffset": 0,
-    "HeadOffset": -4,
+    "HeadOffset": 0,
     "ArmsOffset": 0,
+    "BodyOffset": 4,
     "BodySize": {
       "Width": 16,
       "Length": 32
@@ -3972,9 +3965,11 @@
       "X": 0,
       "Y": 0
     },
+    "AccessoryOffset": 4,
     "LegOffset": 0,
-    "HeadOffset": -4,
+    "HeadOffset": 0,
     "ArmsOffset": 0,
+    "BodyOffset": 4,
     "BodySize": {
       "Width": 16,
       "Length": 32
